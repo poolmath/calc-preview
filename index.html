@@ -284,6 +284,201 @@ div[style*="margin: 12px auto"] {
 	border: 1px solid #93c5fd !important;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
+
+/* === DARK MODE SUPPORT === */
+@media (prefers-color-scheme: dark) {
+	body {
+		background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
+		color: #e5e7eb;
+	}
+	h1 {
+		color: #60a5fa;
+	}
+	.site-header {
+		color: #e5e7eb;
+	}
+	.brand-logo {
+		color: #60a5fa;
+	}
+	.brand-text {
+		color: #60a5fa;
+	}
+	.header-title {
+		color: #93c5fd;
+	}
+	input[type="text"], select {
+		background-color: #1f2937;
+		border-color: #4b5563;
+		color: #e5e7eb;
+	}
+	input[type="text"]:focus, select:focus {
+		border-color: #60a5fa;
+		box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.25);
+	}
+	input[type="text"][readonly] {
+		background-color: rgba(31, 41, 55, 0.8);
+		border: 1px dashed #4b5563;
+		color: #9ca3af;
+	}
+	input[type="button"], button {
+		background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+	}
+	input[type="button"]:hover, button:hover {
+		box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+	}
+	table[border="1"] {
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+	}
+	table[border="1"] > tbody > tr > td {
+		border-color: rgba(255, 255, 255, 0.08);
+	}
+	td {
+		color: #e5e7eb;
+	}
+	td[align="center"] > strong {
+		color: #d1d5db;
+	}
+	.instruction-label {
+		color: #9ca3af;
+	}
+	/* Section background colors - darker variants */
+	.ClassNORM {
+		background-color: #1f2937;
+	}
+	.ClassHEAD {
+		background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+	}
+	.ClassSIZE {
+		background-color: #422006;
+	}
+	.ClassFC {
+		background-color: #3d3200;
+	}
+	.ClassPH {
+		background-color: #4a1942;
+	}
+	.ClassTA {
+		background-color: #14412a;
+	}
+	.ClassCH {
+		background-color: #0c3654;
+	}
+	.ClassCYA {
+		background-color: #3d3200;
+	}
+	.ClassSALT {
+		background-color: #2d2d2d;
+	}
+	.ClassBOR {
+		background-color: #4a1942;
+	}
+	.ClassTEMP {
+		background-color: #422006;
+	}
+	.ClassCSI {
+		background-color: #14412a;
+	}
+	.ClassSUG {
+		background-color: #0c3654;
+	}
+	.ClassGOALS {
+		background-color: #3d3200;
+	}
+	/* Goal styling for dark mode */
+	.goal-label {
+		color: #9ca3af;
+	}
+	.goal-value {
+		color: #93c5fd;
+	}
+	.goal-value.not-setup {
+		color: #6b7280;
+	}
+	/* Result fields in dark mode */
+	input[type="text"][readonly].result-field {
+		background-color: rgba(30, 58, 138, 0.3);
+		border-color: #3b82f6;
+		color: #93c5fd;
+	}
+	/* Tooltip dark mode */
+	.custom-tooltip {
+		background: linear-gradient(135deg, #374151 0%, #4b5563 100%);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+	}
+	.custom-tooltip::before {
+		border-bottom-color: #374151;
+	}
+	.custom-tooltip.above::before {
+		border-top-color: #4b5563;
+	}
+	/* Promo banner dark mode */
+	div[style*="margin: 12px auto"] {
+		background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%) !important;
+		border-color: #3b82f6 !important;
+		color: #e5e7eb;
+	}
+	/* Links in dark mode */
+	a {
+		color: #60a5fa;
+	}
+	a:visited {
+		color: #a78bfa;
+	}
+	/* SVG fills for dark mode */
+	svg path[fill="#000"], svg path[fill="black"] {
+		fill: #e5e7eb;
+	}
+	/* App promo card dark mode */
+	div[style*="margin: 16px auto 24px auto"] {
+		background: linear-gradient(135deg, #1e3a5f 0%, #1a3050 100%) !important;
+		border-color: #3b82f6 !important;
+	}
+	div[style*="margin: 16px auto 24px auto"] div[style*="color: #1a5276"] {
+		color: #93c5fd !important;
+	}
+	div[style*="margin: 16px auto 24px auto"] p {
+		color: #d1d5db !important;
+	}
+	/* Notes section dark mode */
+	div[style*="background:linear-gradient(135deg, #f8fafc"] {
+		background: linear-gradient(135deg, #1f2937 0%, #1a2433 100%) !important;
+		border-color: #4b5563 !important;
+	}
+	div[style*="background:linear-gradient(135deg, #f8fafc"] h3 {
+		color: #d1d5db !important;
+	}
+	div[style*="background:linear-gradient(135deg, #f8fafc"] p {
+		color: #9ca3af !important;
+	}
+	/* Pool Volume Estimator dark mode */
+	div[style*="background:linear-gradient(135deg, #eff6ff"] {
+		background: linear-gradient(135deg, #1e3a5f 0%, #0c3654 100%) !important;
+		border-color: #3b82f6 !important;
+	}
+	div[style*="background:linear-gradient(135deg, #eff6ff"] h3 {
+		color: #93c5fd !important;
+	}
+	div[style*="background:linear-gradient(135deg, #eff6ff"] label {
+		color: #d1d5db !important;
+	}
+	div[style*="background:linear-gradient(135deg, #eff6ff"] p {
+		color: #9ca3af !important;
+	}
+	div[style*="background:rgba(255,255,255,0.6)"] {
+		background: rgba(30, 41, 59, 0.8) !important;
+	}
+	/* Effects of Adding section dark mode */
+	div[style*="background:linear-gradient(135deg, #fefce8"] {
+		background: linear-gradient(135deg, #3d3200 0%, #2d2600 100%) !important;
+		border-color: #a16207 !important;
+	}
+	div[style*="background:linear-gradient(135deg, #fefce8"] h3 {
+		color: #fcd34d !important;
+	}
+	div[style*="background:linear-gradient(135deg, #fefce8"] p {
+		color: #9ca3af !important;
+	}
+}
 </STYLE>
 <SCRIPT LANGUAGE="JavaScript" type="text/javascript"><!--
 
